@@ -12,6 +12,7 @@
   docker_container:
     image: "faurik95/cicd-exam:app"
     name: "{{ container_name }}"
+    force_kill: yes
     networks:
       - name: exam
     networks_cli_compatible: yes
